@@ -7,15 +7,18 @@ Console.WriteLine("Willkommen zum Weltschönsten Advent Of Code 2022! Anschnalle
 Console.WriteLine("Beschwerden und Kommentare zu meinem Code sind wie immer nicht erwünscht. Nur Pull requests sind erlaubt! :P \n");
 
 //Day 1
-Day1.run();
+Day1.Run();
 
-Day2 day2= new Day2();
-day2.run();
-day2.runPart2();
+//Day2
+Day2.RunPart1();
+Day2.RunPart2();
 
 // Day 5
+// TODO: this is not static, because i work with the membervariabled directly. Part 2 ruined my logic, that's why this is a bit sloppy in here... Maybe i will fix it.
+//initialize 2 Objects
 Day5 d5Part1 = new Day5();
-d5Part1.runPart1();
-
 Day5 d5Part2 = new Day5();
+
+//execute the Logic
+d5Part1.runPart1();
 d5Part2.runPart2();

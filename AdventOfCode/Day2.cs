@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
-    internal class Day2
+    static class Day2
     {
-
-      
         //Run Part1
-        public void run()
+        public static void RunPart1()
         {
             string[] allGamesString = Inputs.Day2.Split("\r\n");
             List<Game> allGames = new List<Game>();
@@ -49,7 +47,7 @@ namespace AdventOfCode
         }
 
         //run Part2
-        public void runPart2()
+        public static void RunPart2()
         {
             string[] allGamesString = Inputs.Day2.Split("\r\n");
             List<Game> allGames = new List<Game>();

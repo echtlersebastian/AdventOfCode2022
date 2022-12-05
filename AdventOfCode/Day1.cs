@@ -8,10 +8,9 @@ namespace AdventOfCode
 {
     public static class Day1
     {
-        public static void run()
+        //Solution of Part 1 and 2
+        public static void Run()
         {
-
-          
 
             string[] test2 = Inputs.Day1.Split("\r\n");
 

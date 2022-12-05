@@ -13,6 +13,7 @@ namespace AdventOfCode
 
         public Day5()
         {
+            //This is a little sloppy... There is definitly a better solution... But YOLO
             chars[0] = new List<char> { 'P', 'L', 'M', 'N', 'W', 'V', 'B', 'H' };
             chars[1] = new List<char> { 'H', 'Q', 'M' };
             chars[2] = new List<char> { 'L', 'M', 'Q', 'F', 'G', 'B', 'D', 'N' };
@@ -23,6 +24,7 @@ namespace AdventOfCode
             chars[7] = new List<char> { 'S', 'G', 'R', 'M', 'H', 'L', 'P' };
             chars[8] = new List<char> { 'N', 'C', 'B', 'D', 'P' };
 
+            //I need to invert the List because i want to work with .Add and .Remove to sort the Containers. This saves a lot of stuggle.
             chars[0] = Enumerable.Reverse(chars[0]).ToList();
             chars[1] = Enumerable.Reverse(chars[1]).ToList();
             chars[2] = Enumerable.Reverse(chars[2]).ToList();
@@ -35,7 +37,35 @@ namespace AdventOfCode
 
         }
 
+        //Solution of the first part
+        public void runPart1()
+        {
 
+            foreach (string s in Inputs.Day5.Split("\r\n"))
+            {
+                string[] words = s.Split(' ');
+
+                for (int i = 0; i < Int32.Parse(words[1]); i++)
+                {
+                    int from = Int32.Parse(words[3]) - 1;
+                    int to = Int32.Parse(words[5]) - 1;
+
+                    chars[to].Add(chars[from][chars[from].Count() - 1]);
+
+                    chars[from].RemoveAt(chars[from].Count() - 1);
+                }
+
+
+            }
+            string result = "";
+            foreach (List<char> lc in chars)
+            {
+                result += lc[lc.Count() - 1].ToString();
+            }
+            Console.WriteLine("Result of Day 5 Part 1: " + result);
+        }
+
+        //Solution of the secound part
         public void runPart2()
         {
             foreach (string s in Inputs.Day5.Split("\r\n"))
@@ -60,32 +90,6 @@ namespace AdventOfCode
                 result += lc[lc.Count() - 1].ToString();
             }
             Console.WriteLine("Result of Day 5 Part 2: " + result);
-        }
-        public void runPart1()
-        {
-
-            foreach (string s in Inputs.Day5.Split("\r\n"))
-            {
-                string[] words = s.Split(' ');
-
-                for (int i = 0; i < Int32.Parse(words[1]); i++)
-                {
-                    int from = Int32.Parse(words[3]) - 1;
-                    int to = Int32.Parse(words[5]) - 1;
-
-                    chars[to].Add(chars[from][chars[from].Count() - 1]);
-
-                    chars[from].RemoveAt(chars[from].Count()- 1);
-                }
-
-
-            }
-            string result = "";
-            foreach (List<char> lc in chars)
-            {
-                result += lc[lc.Count() -1].ToString();
-            }
-                Console.WriteLine("Result of Day 5 Part 1: " + result);
         }
     }
 
