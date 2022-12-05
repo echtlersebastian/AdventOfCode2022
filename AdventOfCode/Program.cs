@@ -9,6 +9,9 @@ Console.WriteLine("Beschwerden und Kommentare zu meinem Code sind wie immer nich
 //Day 1
 Day1.run();
 
+Day2 day2= new Day2();
+day2.run();
+day2.runPart2();
 
 // Day 5
 Day5 d5Part1 = new Day5();
