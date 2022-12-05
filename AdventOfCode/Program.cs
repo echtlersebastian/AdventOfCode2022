@@ -14,7 +14,8 @@ Day2.RunPart1();
 Day2.RunPart2();
 
 //Day3
-Day3.Run();
+Day3.RunPart1();
+Day3.RunPart2();
 
 // Day 5
 // TODO: this is not static, because i work with the membervariabled directly. Part 2 ruined my logic, that's why this is a bit sloppy in here... Maybe i will fix it.
