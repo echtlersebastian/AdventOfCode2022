@@ -29,3 +29,8 @@ Day5 d5Part2 = new Day5();
 //execute the Logic
 d5Part1.runPart1();
 d5Part2.runPart2();
+
+
+//Day6
+Day6.RunPart1();
+Day6.RunPart2();
