@@ -34,3 +34,7 @@ d5Part2.runPart2();
 //Day6
 Day6.RunPart1();
 Day6.RunPart2();
+
+
+//Day7
+Day7.Run();
