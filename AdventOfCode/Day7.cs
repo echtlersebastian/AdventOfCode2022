@@ -17,14 +17,11 @@ namespace AdventOfCode
         public static List<Folder> allFolders = new List<Folder>();
         public static List<File> allFiles = new List<File>();
 
-
         public static void Run()
         {
-
             allFolders.Add(new Folder("", ""));
             for (int i = 0; i < input.Length; i++)
             {
-
                 string line = input[i];
                 //Make sure the current Directory is correct
                 if (line.StartsWith(@"$"))
@@ -161,7 +158,6 @@ namespace AdventOfCode
             this._path = path;
             if (name.StartsWith(@"/"))
             {
-
                 this._name = name;
             }
             else
@@ -189,7 +185,6 @@ namespace AdventOfCode
             {
                 _fileSize += f._size;
             }
-
         }
 
         public void calculateTotalFileSize()
@@ -202,7 +197,6 @@ namespace AdventOfCode
             {
                 _totalSize += a._fileSize;
             }
-
         }
     }
 
@@ -211,6 +205,7 @@ namespace AdventOfCode
         public int _size;
         public string _name;
         public string _path;
+
         public File(int size, string name, string path)
         {
             _name = name;

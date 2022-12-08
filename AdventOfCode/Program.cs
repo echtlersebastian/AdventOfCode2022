@@ -21,7 +21,7 @@ Day3.RunPart2();
 Day4.Run();
 
 // Day 5
-// TODO: this is not static, because i work with the membervariabled directly. Part 2 ruined my logic, that's why this is a bit sloppy in here... Maybe i will fix it.
+// TODO: this is not static, because i work with the membervariables directly. Part 2 ruined my logic, that's why this is a bit sloppy in here... Maybe i will fix it.
 //initialize 2 Objects
 Day5 d5Part1 = new Day5();
 Day5 d5Part2 = new Day5();
@@ -38,3 +38,6 @@ Day6.RunPart2();
 
 //Day7
 Day7.Run();
+
+//Day8
+Day8.Run();
