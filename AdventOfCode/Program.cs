@@ -40,4 +40,6 @@ Day6.RunPart2();
 Day7.Run();
 
 //Day8
-Day8.Run();
+//Day8.Run();
+
+Day9.Run();
