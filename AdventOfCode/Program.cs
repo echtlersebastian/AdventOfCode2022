@@ -46,3 +46,7 @@ Day9.Run();
 
 
 Day10.Run();
+
+Day11.Run();
+//Console.WriteLine("Adding12345 and 778334");
+//Console.WriteLine("Ergebnis: " + StringAdder.Add("12345", "778334"));
