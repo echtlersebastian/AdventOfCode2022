@@ -45,7 +45,4 @@ Day7.Run();
 Day9.Run();
 
 
-Day10 ten1 = new Day10();
-Day10 ten2 = new Day10();
-ten1.Run();
-ten2.RunPart2();
+Day10.Run();
